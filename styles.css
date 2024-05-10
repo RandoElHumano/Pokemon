@@ -3,6 +3,50 @@ body, html {
     padding: 0;
     height: 100%;
   }
+  /*Menu de navegacion*/
+  .menu {
+          position: fixed; /* Fija el menú en la página */
+          top: 0; /* Lo coloca en la parte superior */
+          left: 0; /* Lo coloca en la esquina izquierda */
+          background-color: #333; /* Color de fondo */
+          padding: 10px 20px; /* Espacio interno */
+          z-index: 1000; /* Asegura que esté por encima de otros elementos */
+      }
+      .menu ul {
+          list-style-type: none; /* Quita los puntos de lista */
+          margin: 0;
+          padding: 0;
+          text-align: center;
+      }
+      .menu ul li {
+          display: inline; /* Muestra los elementos en línea */
+          margin-right: 20px; /* Espacio entre elementos */
+      }
+      .menu ul li a {
+          color: white; /* Color del texto */
+          text-decoration: none; /* Quita la subraya */
+          padding: 10px; /* Espacio interno */
+          transition: background-color 0.3s; /* Transición de color de fondo */
+      }
+      .menu ul li a:hover {
+          background-color: #555; /* Cambio de color al pasar el mouse */
+      }
+
+      /* Estilos para el párrafo estilo Pokédex */
+      .pokedex-border {
+        border: 3px solid #E63B1E; /* Borde rojo */
+        padding: 20px; /* Espacio interno */
+        border-radius: 15px; /* Bordes redondeados */
+        background-color: #f2f2f2; /* Fondo gris claro */
+        width: 300px; /* Ancho del párrafo */
+        margin: 0 auto; /* Centra el párrafo horizontalmente */
+    }
+    /* Estilos para el texto dentro del párrafo */
+    .pokedex-text {
+        font-family: 'Arial', sans-serif; /* Tipo de fuente */
+        color: #333; /* Color del texto */
+        text-align: justify; /* Alineación justificada */
+    }
   
   .split-background {
     position: absolute;
